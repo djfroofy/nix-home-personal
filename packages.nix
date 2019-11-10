@@ -4,14 +4,20 @@ pkgs: with pkgs; [
   arandr
   haskellPackages.xmonad-wallpaper
   feh
+  xv
   firefox
   # google-chrome
   acpi
   rofi
   adobe-reader
-  aesop
+  #aesop
+  okular
   freerdp
   usbutils
+  tree
+  google-chrome
+  dzen2
+  
   
   # Keyboard stuff
   xsel
@@ -26,16 +32,20 @@ pkgs: with pkgs; [
   # synergy
 
   # Chatting, conferencing, emailing
-  #mutt
   fetchmail
   zoom-us
   slack
   procmail
   libreoffice
   w3m-full
+  mutt
+  mailcap
+  neomutt
+  urlview
+  notmuch
+  notmuch-mutt
+  thunderbird
   #haskellPackages.attomail
-  #mailcap
-  #postfix
 
   # slack-term
 

@@ -1,3 +1,12 @@
+#let ff69pkgs = (import ./nixpkgs-ff69 {});
+#(builtins.fetchGit {
+  # Descriptive name to make the store path easier to identify
+#  name = "ff69";
+#  url = https://github.com/NixOS/nixpkgs.git;
+  # Commit hash for nixos-unstable as of 2018-09-12
+  # `git ls-remote https://github.com/nixos/nixpkgs-channels nixos-unstable`
+#  rev = "fec43936b45fe738b850686646e49ca12b3749a5";}) {});
+#in
 pkgs: with pkgs; [
   # X related stuff
   xmobar
@@ -5,6 +14,7 @@ pkgs: with pkgs; [
   haskellPackages.xmonad-wallpaper
   feh
   xv
+  #(import ./nixpkgs-ff69 {}).firefox
   firefox
   # google-chrome
   acpi
@@ -27,6 +37,7 @@ pkgs: with pkgs; [
   xdotool
   slop
   ffmpeg
+  imagemagick
 
   # Screen, Mouse sharing
   # synergy

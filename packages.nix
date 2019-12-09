@@ -27,8 +27,9 @@ pkgs: with pkgs; [
   tree
   google-chrome
   dzen2
-  
-  
+  #viber
+  fontmatrix
+
   # Keyboard stuff
   xsel
   xclip
@@ -114,7 +115,7 @@ pkgs: with pkgs; [
   cargo
   carnix
 
-  # Shells, remote debugging 
+  # Shells, remote debugging
   mosh
 
   # Misc others
@@ -169,7 +170,8 @@ pkgs: with pkgs; [
   mpv
   gimp
   youtube-dl
-  (pkgs.mplayer.override { jackaudioSupport = true; })
+  mplayer
+  #(pkgs.mplayer.override { jackaudioSupport = true; })
   #(pkgs.mpv.override { jackaudioSupport = true; })
   #(pkgs.blender.override { jackaudioSupport = true; })
 
@@ -182,5 +184,12 @@ pkgs: with pkgs; [
   arduino
   fritzing
   ino
+
+  # games
+  steam
+  steam-run
+  lutris
+  libGL_driver
+  mesa_drivers
 
 ]

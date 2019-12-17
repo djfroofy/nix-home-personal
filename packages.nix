@@ -192,4 +192,7 @@ pkgs: with pkgs; [
   libGL_driver
   mesa_drivers
 
+  # random
+  thefuck
+
 ]

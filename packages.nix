@@ -8,7 +8,10 @@
 #  rev = "fec43936b45fe738b850686646e49ca12b3749a5";}) {});
 #in
 pkgs: with pkgs; [
-  # X related stuff
+  # X, Window Management
+  xorg.xmodmap
+  xorg.xdpyinfo
+  xlibs.xmodmap
   xmobar
   arandr
   haskellPackages.xmonad-wallpaper
@@ -29,6 +32,56 @@ pkgs: with pkgs; [
   dzen2
   #viber
   fontmatrix
+
+  # Web Browsing
+  lynx
+  gnutls
+  openssl
+
+  # Editors
+  vim
+  tudu
+
+  # Shell
+  zsh
+  termite
+  oh-my-zsh
+  dropbear
+
+  # OS and user-space emulation
+  docker
+  qemu
+
+  # Common *nix utils
+  socat
+  tmux
+  zip
+  unzip
+  mkpasswd
+  dnsmasq
+  htop
+  pciutils
+  tgt
+  lolcat
+  jq
+  tre
+  wget
+  git
+  file
+  lsof
+  binutils
+  lshw
+  iproute
+  ncdu
+  tlp
+  telnet
+
+  # Performance Testing
+  sysbench
+  flameGraph
+  linuxPackages.perf
+  # HW Diagnostics
+  memtest86plus
 
   # Keyboard stuff
   xsel
@@ -70,6 +123,7 @@ pkgs: with pkgs; [
 
   # General
   gnumake
+  gcc
   cmake
   direnv
   minicom
@@ -82,9 +136,6 @@ pkgs: with pkgs; [
   # Java
   maven
   oraclejdk8
-
-  # C
-  gcc
 
   # Python and python packages
   python
@@ -106,7 +157,7 @@ pkgs: with pkgs; [
   # Haskell
   ghc
 
-  # Code editors, IDEs 
+  # Code editors, IDEs
   vscode
 
   # Rust
@@ -126,9 +177,7 @@ pkgs: with pkgs; [
   nixops
   radeontop
   go-md2man
-
   unrar
-  xorg.xdpyinfo
   # ---
   # AV and Games
   # ---

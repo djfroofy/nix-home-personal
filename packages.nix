@@ -32,6 +32,8 @@ pkgs: with pkgs; [
   dzen2
   #viber
   fontmatrix
+  autojump
+  nix-prefetch-git
 
   # Web Browsing
   lynx
@@ -75,6 +77,7 @@ pkgs: with pkgs; [
   ncdu
   tlp
   telnet
+  gnupg1
 
   # Performance Testing
   sysbench
@@ -97,18 +100,19 @@ pkgs: with pkgs; [
   # synergy
 
   # Chatting, conferencing, emailing
-  fetchmail
+  #fetchmail
   zoom-us
+  franz
   slack
-  procmail
+  #procmail
   libreoffice
   w3m-full
-  mutt
-  mailcap
-  neomutt
+  #mutt
+  #mailcap
+  #neomutt
   urlview
-  notmuch
-  notmuch-mutt
+  #notmuch
+  #notmuch-mutt
   thunderbird
   #haskellPackages.attomail
 
@@ -228,6 +232,7 @@ pkgs: with pkgs; [
   minetest
   glxinfo
   gtypist
+  unity3d
 
   # electronics projects
   arduino

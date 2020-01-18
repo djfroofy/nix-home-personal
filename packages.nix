@@ -116,6 +116,8 @@ pkgs: with pkgs; [
   thunderbird
   #haskellPackages.attomail
 
+  taskwarrior
+  tasknc
   # slack-term
 
   # Health and Well-being

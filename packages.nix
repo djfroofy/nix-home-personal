@@ -117,8 +117,11 @@ pkgs: with pkgs; [
   #haskellPackages.attomail
 
   taskwarrior
+  timewarrior
   tasknc
+  vit
   python37Packages.bugwarrior
+
   # slack-term
 
   # Health and Well-being

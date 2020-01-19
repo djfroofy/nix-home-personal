@@ -118,6 +118,7 @@ pkgs: with pkgs; [
 
   taskwarrior
   tasknc
+  python37Packages.bugwarrior
   # slack-term
 
   # Health and Well-being

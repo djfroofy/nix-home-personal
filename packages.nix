@@ -28,7 +28,6 @@ pkgs: with pkgs; [
   freerdp
   usbutils
   tree
-  google-chrome
   dzen2
   #viber
   fontmatrix
@@ -251,6 +250,11 @@ pkgs: with pkgs; [
   lutris
   libGL_driver
   mesa_drivers
+
+  # audio
+  bluez-tools
+  pulseaudio-modules-bt
+
 
   # random
   thefuck

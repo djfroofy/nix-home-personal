@@ -255,6 +255,9 @@ pkgs: with pkgs; [
   bluez-tools
   pulseaudio-modules-bt
 
+  # stores and retrives passwords securely
+  pass
+
 
   # random
   thefuck

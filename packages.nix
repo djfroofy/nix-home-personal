@@ -229,6 +229,7 @@ pkgs: with pkgs; [
   gimp
   youtube-dl
   mplayer
+  spotify
   #(pkgs.mplayer.override { jackaudioSupport = true; })
   #(pkgs.mpv.override { jackaudioSupport = true; })
   #(pkgs.blender.override { jackaudioSupport = true; })

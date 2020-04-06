@@ -151,7 +151,11 @@ pkgs: with pkgs; [
   python27Packages.virtualenv
   python37
   python37Packages.virtualenv
+  # comment the next line out when on unstable
   python37Packages.glances
+
+  # ucomment the next line when on unstable
+  #glances
 
   # code review stuff
   arcanist
@@ -259,6 +263,8 @@ pkgs: with pkgs; [
   # stores and retrives passwords securely
   pass
 
+  #fahviewer
+  #fahcontrol
 
   # random
   thefuck

@@ -100,7 +100,7 @@ pkgs: with pkgs; [
 
   # Chatting, conferencing, emailing
   #fetchmail
-  zoom-us
+  #zoom-us
   franz
   slack
   #procmail

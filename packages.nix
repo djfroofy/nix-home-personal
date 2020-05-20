@@ -33,6 +33,12 @@ pkgs: with pkgs; [
   fontmatrix
   autojump
   nix-prefetch-git
+  parallel
+
+
+  mycli
+  mysql-client
+  #jupyter
 
   # Web Browsing
   lynx
@@ -76,7 +82,9 @@ pkgs: with pkgs; [
   ncdu
   tlp
   telnet
-  gnupg1
+  #gnupg1
+  pinentry
+  pinentry_qt5
 
   # Performance Testing
   sysbench
@@ -100,7 +108,7 @@ pkgs: with pkgs; [
 
   # Chatting, conferencing, emailing
   #fetchmail
-  #zoom-us
+  zoom-us
   franz
   slack
   #procmail
@@ -112,7 +120,8 @@ pkgs: with pkgs; [
   urlview
   #notmuch
   #notmuch-mutt
-  thunderbird
+  #thunderbird
+  thunderbird-bin
   #haskellPackages.attomail
 
   taskwarrior
@@ -144,7 +153,7 @@ pkgs: with pkgs; [
 
   # Java
   maven
-  oraclejdk8
+  #oraclejdk8
 
   # Python and python packages
   python
@@ -153,6 +162,7 @@ pkgs: with pkgs; [
   python37Packages.virtualenv
   # comment the next line out when on unstable
   python37Packages.glances
+  #python37Packages.mysql-connector
 
   # ucomment the next line when on unstable
   #glances

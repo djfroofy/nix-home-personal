@@ -232,6 +232,7 @@ pkgs: with pkgs; [
   gimp
   blender
   inkscape
+  krita
 
   # Bling
   almonds

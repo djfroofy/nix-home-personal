@@ -17,12 +17,13 @@ pkgs: with pkgs; [
   haskellPackages.xmonad-wallpaper
   feh
   xv
+  fortune
   #(import ./nixpkgs-ff69 {}).firefox
   firefox
+  #flashplayer
   # google-chrome
   acpi
   rofi
-  adobe-reader
   #aesop
   okular
   freerdp
@@ -34,6 +35,12 @@ pkgs: with pkgs; [
   autojump
   nix-prefetch-git
   parallel
+
+  # key logging utils
+  evtest
+  logkeys
+
+  #gdrivefs
 
 
   mycli
@@ -54,6 +61,7 @@ pkgs: with pkgs; [
   termite
   oh-my-zsh
   dropbear
+  ripgrep
 
   # OS and user-space emulation
   docker
@@ -121,6 +129,10 @@ pkgs: with pkgs; [
   #notmuch
   #notmuch-mutt
   #thunderbird
+  #mailspring
+  libsecret
+  gnome3.gnome-keyring
+  #mailspring
   thunderbird-bin
   #haskellPackages.attomail
 
@@ -156,12 +168,13 @@ pkgs: with pkgs; [
   #oraclejdk8
 
   # Python and python packages
-  python
-  python27Packages.virtualenv
+  #python
+  #python27Packages.virtualenv
   python37
   python37Packages.virtualenv
   # comment the next line out when on unstable
-  python37Packages.glances
+  # python37Packages.glances
+  glances
   #python37Packages.mysql-connector
 
   # ucomment the next line when on unstable
@@ -175,7 +188,7 @@ pkgs: with pkgs; [
 
   # Go
   go
-  protobuf
+  #protobuf
 
   # Haskell
   ghc
@@ -257,7 +270,7 @@ pkgs: with pkgs; [
 
   # electronics projects
   arduino
-  fritzing
+  #fritzing
   ino
 
   # games
@@ -267,15 +280,23 @@ pkgs: with pkgs; [
   libGL_driver
   mesa_drivers
 
+  # messaging
+  teams
+
   # audio
   bluez-tools
   pulseaudio-modules-bt
+  pulseeffects
+  #strawberry
+  cli-visualizer
+
 
   # stores and retrives passwords securely
   pass
 
   #fahviewer
   #fahcontrol
+  haskellPackages.niv
 
   # random
   thefuck

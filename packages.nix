@@ -286,7 +286,7 @@ pkgs: with pkgs; [
   # audio
   bluez-tools
   pulseaudio-modules-bt
-  pulseeffects
+  pulseeffects-legacy
   #strawberry
   cli-visualizer
 
@@ -296,7 +296,7 @@ pkgs: with pkgs; [
 
   #fahviewer
   #fahcontrol
-  haskellPackages.niv
+  niv
 
   # random
   thefuck

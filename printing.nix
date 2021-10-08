@@ -11,6 +11,7 @@
       brgenml1lpr
       brgenml1cupswrapper
       hll2390dw-cups
+      epson-escpr
     ];
   };
 

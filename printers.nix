@@ -9,7 +9,7 @@
   name = "Epson-ET-2760";
   description = "Epson ET-2760";
   location = "Home Office 2";
-  deviceUri = "lpd://192.168.86.139/";
+  deviceUri = "lpd://192.168.86.43/";
   model = "epson-inkjet-printer-escpr/Epson-ET-2760_Series-epson-escpr-en.ppd";
  }
 ]

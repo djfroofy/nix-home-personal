@@ -11,13 +11,15 @@ pkgs: with pkgs; [
   # X, Window Management
   xorg.xmodmap
   xorg.xdpyinfo
-  xlibs.xmodmap
+  #xlibs.xmodmap
+  xorg.xmodmap
   xmobar
   arandr
-  haskellPackages.xmonad-wallpaper
   feh
   xv
   fortune
+  # Note taking application
+  joplin
   #(import ./nixpkgs-ff69 {}).firefox
   firefox
   #flashplayer
@@ -31,10 +33,11 @@ pkgs: with pkgs; [
   tree
   dzen2
   #viber
-  fontmatrix
+  #fontmatrix
   autojump
   nix-prefetch-git
   parallel
+  dmidecode
 
   # key logging utils
   evtest
@@ -89,14 +92,16 @@ pkgs: with pkgs; [
   iproute
   ncdu
   tlp
-  telnet
+  #telnet
+  inetutils # replaces telnet
   #gnupg1
   pinentry
-  pinentry_qt5
+  pinentry_gtk2
 
   # Performance Testing
   sysbench
-  flameGraph
+  #flameGraph
+  flamegraph
   linuxPackages.perf
   # HW Diagnostics
   memtest86plus
@@ -140,7 +145,7 @@ pkgs: with pkgs; [
   timewarrior
   tasknc
   vit
-  python37Packages.bugwarrior
+  #python37Packages.bugwarrior
 
   # slack-term
 
@@ -170,8 +175,8 @@ pkgs: with pkgs; [
   # Python and python packages
   #python
   #python27Packages.virtualenv
-  python37
-  python37Packages.virtualenv
+  python311
+  python311Packages.virtualenv
   # comment the next line out when on unstable
   # python37Packages.glances
   glances
@@ -181,7 +186,7 @@ pkgs: with pkgs; [
   #glances
 
   # code review stuff
-  arcanist
+  # arcanist
 
   # Ruby
   ruby
@@ -200,7 +205,18 @@ pkgs: with pkgs; [
   rustc
   rustPlatform.rustcSrc
   cargo
-  carnix
+  #carnix
+
+  # SCM
+  github-cli
+
+  # java development
+  eclipses.eclipse-java
+  jetbrains.idea-community
+
+
+  # Cloud admin
+  oci-cli
 
   # Shells, remote debugging
   mosh
@@ -210,7 +226,7 @@ pkgs: with pkgs; [
   rpm
   fpm
   fceux
-  nixops
+  #nixops
   radeontop
   go-md2man
   unrar
@@ -266,26 +282,27 @@ pkgs: with pkgs; [
   minetest
   glxinfo
   gtypist
-  unity3d
+  #unity3d
 
   # electronics projects
   arduino
   #fritzing
-  ino
+  #ino # removed - stuck on python2.7
 
   # games
   steam
   steam-run
   lutris
-  libGL_driver
-  mesa_drivers
+  #libGL_driver
+  #mesa_drivers
+  mesa.drivers
 
   # messaging
   teams
 
   # audio
   bluez-tools
-  pulseaudio-modules-bt
+  #pulseaudio-modules-bt
   pulseeffects-legacy
   #strawberry
   cli-visualizer

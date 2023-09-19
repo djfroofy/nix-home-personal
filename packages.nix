@@ -60,7 +60,9 @@ pkgs: with pkgs; [
   tudu
 
   # Shell
+  fish
   zsh
+  kitty
   termite
   oh-my-zsh
   dropbear

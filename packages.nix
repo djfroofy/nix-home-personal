@@ -62,8 +62,6 @@ pkgs: with pkgs; [
   # Shell
   fish
   zsh
-  kitty
-  termite
   oh-my-zsh
   dropbear
   ripgrep

@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  programs.git.signing.format = "openpgp";
   programs.git.settings = {
     user = {
       name = config.nixHome.profile.identity.fullName;

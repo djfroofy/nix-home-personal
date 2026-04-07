@@ -2,10 +2,10 @@
 {
   programs.git.settings = {
     user = {
-      name = "Drew Smathers";
-      email = "drew.smathers@oracle.com";
+      name = config.nixHome.profile.identity.fullName;
+      email = config.nixHome.profile.identity.email;
     };
-    signing.key = "85E0B175FAE8B88F";
+    signing.key = config.nixHome.profile.identity.gitSigningKey;
   };
   #programs.git.signing.signByDefault = true;
 

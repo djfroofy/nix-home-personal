@@ -10,6 +10,8 @@
   };
   #programs.git.signing.signByDefault = true;
 
+  home.file.".config/karabiner".source = ../karabiner;
+
 #  services.spotifyd = {
 #    enable = true;
 #    settings = {

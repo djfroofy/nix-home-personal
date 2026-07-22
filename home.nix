@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, karabinerConfig, ... }:
 {
   programs.git.signing.format = "openpgp";
   programs.git.settings = {
@@ -10,7 +10,7 @@
   };
   #programs.git.signing.signByDefault = true;
 
-  home.file.".config/karabiner".source = ../karabiner;
+  home.file.".config/karabiner".source = karabinerConfig;
 
 #  services.spotifyd = {
 #    enable = true;
